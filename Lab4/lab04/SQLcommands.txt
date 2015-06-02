@@ -1,0 +1,32 @@
+CREATE TABLE IF NOT EXISTS `cars` (
+  `car_id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+  `make` varchar(18) NOT NULL,
+  `model` varchar(18) NOT NULL,
+  `price` int(11) NOT NULL,
+  `yom` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+INSERT INTO `cars` (`car_id`, `make`, `model`, `price`, `yom`) VALUES
+('0', 'Holden', 'Astra', 14000, 2005),
+('1', 'BMW', 'X3', 35000, 2004),
+('2', 'Ford', 'Falcon', 39000, 2010),
+('3', 'Toyota', 'Corolla', 20000, 2010),
+('4', 'Holden', 'Commodore', 13500, 2005),
+('5', 'Holden', 'Astra', 8000, 2001),
+('6', 'Holden', 'Commodore', 28000, 2009),
+('7', 'Ford', 'Falcon', 14000, 2006),
+('8', 'Ford', 'Falcon', 7000, 2003),
+('9', 'Ford', 'Laser', 10000, 2001),
+('10', 'Mazda', 'RX-7', 26000, 2000),
+('11', 'Toyota', 'Corolla', 12000, 2001),
+('12', 'Mazda', '3', 14500, 2007);
+
+
+
+SELECT * FROM cars;
+
+SELECT make, model, price FROM cars ORDER BY make, model;
+
+S
